@@ -157,3 +157,69 @@ body {
 }
 
 */
+table {
+  border-collapse: collapse;
+  width: 80%; /* Set the width of the table to 80% */
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: none; /* Remove border from table, th, and td elements */
+}
+
+/* Optional: Add some padding to table cells */
+td {
+  padding: 8px;
+}
+
+/* Styles for images within elements with the class 'table-img' */
+.table-img img {
+  max-height: 200px; /* Set a maximum height for the images */
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Add rounded corners to the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+.corner-img img {
+  max-height: 200px; /* Set a maximum height for the images */
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Scale up the images on hover */
+.table-img img:hover {
+  transform: scale(1.1);
+}
+
+.table-img td {
+  height: 200px; /* Adjust the height as needed */
+}
+
+.border-table td:first-child {
+  border-right: 2px solid #ccc; /* Adjust border style as needed */
+}
+
+.person img {
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the entire container while preserving aspect ratio */
+}
+
+
+.table-heading {
+  font-family: 'Times New Roman', Times, serif; /* Use Times font */
+  font-size: 24px; /* Set font size */
+  font-weight: bold; /* Optionally adjust font weight */
+  font-style: italic;
+  color: #333; /* Set text color */
+  text-align: center;
+  vertical-align: middle;
+  width: 150px;
+  /* Optionally add more styling properties like margin, padding, etc. */
+}
