@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <meta property="og:title" content="CLIPasso: Semantically-Aware Object Sketching"/>
+  <meta property="og:title" content="Implicit Style-Content Separation using B-LoRA"/>
   <meta property="og:url" content="https://clipasso.github.io/clipasso/"/>
   <meta property="og:image" content="static/images/og_tag_header_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <title>CLIPasso: Semantically-Aware Object Sketching</title>
+  <title>Implicit Style-Content Separation using B-LoRA</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
-  <link rel="icon" href="static/figures/icon2.png">
+  <link rel="icon" href="static/figures/pen_sketch_drawing3.jpg">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -30,6 +30,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -39,7 +40,7 @@
     <div class="container is-max-widescreen">
       <!-- <div class="columns is-centered"> -->
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CLIPasso: Semantically-Aware Object Sketching</h1>
+          <h1 class="title is-1 publication-title">Implicit Style-Content Separation using B-LoRA</h1>
         </div>
     </div>
   </div>   
@@ -52,18 +53,14 @@
         <div class="column has-text-centered">
           <!-- <h1 class="title is-1 publication-title">CLIPasso: Semantically-Aware Object Sketching</h1> -->
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="https://yaelvi116.wixsite.com/mysite" target="_blank">Yael Vinker</a><sup>1,2</sup>,</span>
-            <span class="author-block"><a href="https://pajouheshgar.github.io/" target="_blank">Ehsan Pajouheshgar</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="https://jessica-bo.github.io/" target="_blank">Jessica Y. Bo</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="https://roman-bachmann.github.io/" target="_blank">Roman Bachmann</a><sup>1</sup>,</span><br>
-            <span class="author-block"><a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit Haim Bermano</a><sup>2</sup>,</span>
-            <span class="author-block"><a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a><sup>2</sup>,</span>
-            <span class="author-block"><a href="https://vilab.epfl.ch/zamir/" target="_blank">Amir Zamir</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="https://faculty.idc.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a><sup>3</sup></span>
+            <span class="author-block"><a href="" target="_blank">Yarden Frenkel</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://yaelvi116.wixsite.com/mysite" target="_blank">Yael Vinker</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://faculty.idc.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a><sup>2</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Swiss Federal Institute of Technology (EPFL), <sup>2</sup>Tel Aviv University, <sup>3</sup>Reichman University</span> 
+            <span class="author-block"><sup>1</sup>Tel Aviv University, <sup>2</sup>Reichman University</span> 
             <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
           </div>
 
@@ -103,15 +100,15 @@
               <!-- </span> -->
               <!-- Colab Link. -->
               <span class="link-block">
-                <a href="https://github.com/yael-vinker/CLIPSketch" target="_blank"
+                <a href="" target="_blank"
                 class="external-link button is-normal is-rounded">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <span>Code</span>
+                <span>Code (coming soon...)</span>
               </a>
               </span>
-             <span class="link-block">
+             <!-- <span class="link-block">
               <a href="https://colab.research.google.com/github/yael-vinker/CLIPasso/blob/main/CLIPasso.ipynb"  target="_blank"
                  class="external-link button is-normal is-rounded">
                 <span class="icon">
@@ -119,7 +116,7 @@
                 </span>
                 <span>Colab</span>
               </a>
-             </span>
+             </span> -->
            
             </div>
           </div>
@@ -139,12 +136,11 @@
       <div class="container">
       <div class="item">
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/teaser2.png" alt="clipasso"/>
+        <img src="static/figures/teaser_style_content_blora.png" alt="B-LoRA"/>
       </div>
       <h2 class="subtitle">
-        We introduce a method for performing <b>CLIP</b>-guided <b>S</b>emantically-<b>A</b>ware <b>O</b>bject <b>S</b>ketching, permuted in short as CLIPasso. <br>
-        Our work converts an image of an object to a sketch, allowing for varying levels of abstraction, while preserving its key visual features.<br>Even with a very minimal representation (the rightmost flamingo and horse are drawn with only a few strokes), one can recognize both the semantics and the structure of the subject depicted. 
-      </h2>
+        We introduce our method <b>B-LoRA</b>.
+        By implicitly decomposing a single image into its style and content representation captured by B-LoRA, we can perform high quality style-content mixing and even swapping the style and content between two stylized images.</h2>
     </div>
   </div>
  <!--  </div> -->
@@ -160,23 +156,20 @@
       <div class="column is-four-fifths">
         <div class="item">
           <p style="margin-bottom: 30px">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/sketchy_video.mp4"
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+          <!-- <source src="static/figures/sketchy_video.mp4"
           type="video/mp4">
-        </video>
+        </video> -->
         </p>
         </div>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Abstraction is at the heart of sketching due to the simple and minimal nature of line drawings.
-            Abstraction entails identifying the essential visual properties of an object or scene, which requires semantic understanding and prior knowledge of high-level concepts.
-            Abstract depictions are therefore challenging for artists, and even more so for machines.
-            We present an object sketching method that can achieve different levels of abstraction, guided by geometric and semantic simplifications.
-            While sketch generation methods often rely on explicit sketch datasets for training, we utilize the remarkable ability of CLIP (Contrastive-Language-Image-Pretraining) to distill semantic concepts from sketches and images alike.
-            We define a sketch as a set of Bézier curves and use a differentiable rasterizer to optimize the parameters of the curves directly with respect to a CLIP-based perceptual loss.
-            The abstraction degree is controlled by varying the number of strokes.
-            The generated sketches demonstrate multiple levels of abstraction while maintaining recognizability, underlying structure, and essential visual components of the subject drawn.
+            Image stylization involves manipulating the visual appearance and texture (style) of an image while preserving its underlying objects, structures, and concepts (content). The separation of style and content is essential for manipulating the image's style independently from its content, ensuring a harmonious and visually pleasing result. Achieving this separation requires a deep understanding of both the visual and semantic characteristics of images, often necessitating the training of specialized models or employing heavy optimization.
+            In this paper, we introduce B-LoRA, a method that leverages LoRA (Low-Rank Adaptation) to <em>implicitly</em> separate the style and content components of a <em>single</em> image, facilitating various image stylization tasks.
+            By analyzing the architecture of SDXL combined with LoRA, we find that jointly learning the LoRA weights of two specific blocks (referred to as B-LoRAs) achieves style-content separation that cannot be achieved by training each B-LoRA independently.
+            Consolidating the training into only two blocks and separating style and content allows for significantly improving style manipulation and overcoming overfitting issues often associated with model fine-tuning. 
+            Once trained, the two B-LoRAs can be used as independent components to allow various image stylization tasks, including image style transfer, text-based image stylization, consistent style generation, and style-content mixing.
           </p>
         </div>
       </div>
@@ -190,34 +183,231 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">Object to Sketch Synthesis with Different Levels of Abstraction</h2>
       <div id="results-carousel" class="carousel results-carousel">
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/rose.png" alt="cars peace"/>
+        <h2 class="title has-text-centered">Image Stylization Based On Image Style Reference</h2>
+        <table border="1">
+          <tr>
+            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_images/kiss.png" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/scene_imgs/ballerina.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/scene_style/ballerina_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/scene_style/ballerina_drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/scene_style/ballerina_working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/scene_style/ballerina_kiss.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/scene_style/ballerina_drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/scene_imgs/boat.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/scene_style/boat_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/scene_style/boat_drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/scene_style/boat_working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/scene_style/boat_kiss.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/scene_style/boat_drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/scene_imgs/eiffel_tower.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_kiss.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/scene_imgs/plant.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/scene_style/plant_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/scene_style/plant_drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/scene_style/plant_working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/scene_style/plant_kiss.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/scene_style/plant_drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/scene_imgs/queen.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/scene_style/queen_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/scene_style/queen_drawing1.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/scene_style/queen_working_cartoon.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/scene_style/queen_kiss.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/scene_style/queen_drawing2.jpg" alt="Image 6"></td>
+          </tr>
+          <!-- Add more rows and images as needed -->
+        </table>
       </div>
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/camel.png" alt="cars peace"/>
+        <h2 class="title has-text-centered">Image Stylization Based On Object Image Reference</h2>
+        <table border="1">
+          <tr>
+            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/bull_bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/bull_wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/bull_dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/bull_fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/bull_statue.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_statue.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/dog2_bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/dog2_wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/dog2_dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/dog2_fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/dog2_statue.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_statue.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/statue_bull.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/statue_wolf_plushie.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/statue_dog2.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/statue_fat_bird.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/objects_mixing/statue_statue.jpg" alt="Image 6"></td>
+          </tr>
+          <!-- Add more rows and images as needed -->
+        </table>
       </div>
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/cat1.png" alt="cars peace"/>
+        <h2 class="title has-text-centered">Image Stylization Based On Style Image Reference</h2>
+        <table border="1">
+          <tr>
+            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_drawing3.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing3_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing3_drawing3.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing3_painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing3_drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing3_working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/painting_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/painting_drawing3.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/painting_painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/painting_drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/painting_working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing1_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing1_drawing3.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing1_painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing1_drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/drawing1_working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_pen_sketch.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_drawing3.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_painting.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_drawing1.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_working_cartoon.jpg" alt="Image 6"></td>
+          </tr>
+        </table>
       </div>
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/flamingo.png" alt="cars peace"/>
+        <h2 class="title has-text-centered">Image Stylization Based On Text Reference</h2>
+        <table border="1" class="border-table">
+          <!-- Rows -->
+          <tr>
+            <td><p class="table-heading">Content</p></td>
+            <td><p class="table-heading">"Made of Gold"</p></td>
+            <td><p class="table-heading">"... Wood"</p></td>
+            <td><p class="table-heading">"... Glass"</p></td>
+            <td><p class="table-heading">"... Wool"</p></td>
+            <td><p class="table-heading">"... Steel"</p></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/teddybear_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/teddybear_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/teddybear_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/teddybear_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/teddybear_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/metal_bird_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/metal_bird_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/metal_bird_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/metal_bird_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/metal_bird_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/bull_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/bull_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/bull_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/bull_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/bull_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/fat_bird_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/fat_bird_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/fat_bird_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/fat_bird_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/fat_bird_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/buddha_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/buddha_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/buddha_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/buddha_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/buddha_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <tr>
+            <td class="table-img"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></td>
+            <td class="table-img"><img src="static/figures/material_change/scary_mug_gold.jpg" alt="Image 2"></td>
+            <td class="table-img"><img src="static/figures/material_change/scary_mug_wood.jpg" alt="Image 3"></td>
+            <td class="table-img"><img src="static/figures/material_change/scary_mug_glass.jpg" alt="Image 4"></td>
+            <td class="table-img"><img src="static/figures/material_change/scary_mug_wool.jpg" alt="Image 5"></td>
+            <td class="table-img"><img src="static/figures/material_change/scary_mug_steel.jpg" alt="Image 6"></td>
+          </tr>
+          <!-- Add more rows and images as needed -->
+        </table>
       </div>
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/giraffe.png" alt="cars peace"/>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/elephant.png" alt="cars peace"/>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/dog.png" alt="cars peace"/>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/men.png" alt="cars peace"/>
-      </div>
-     
-    
   </div>
 </div>
 </div>
@@ -237,27 +427,18 @@
         <h2 class="title is-3">How does it work?</h2>
         <div class="content has-text-justified">
           <p>
-
-            Our method is optimization-based and therefore does not require any explicit sketch dataset. 
-            We use the CLIP image encoder to guide the process of converting a photograph to an abstract sketch.
-
-            CLIP encoding provides the semantic understanding of the concept depicted, while the photograph itself provides the geometric grounding of the sketch to the concrete subject.
-
-            We define a sketch as a set of N black strokes placed on a white background.
-            We vary the number of strokes N to create different levels of abstraction. 
+            Our method leverages the powerful Stable Diffusion XL (SDXL) text-to-image diffusion model and the Low-Rank Adaptation (LoRA) technique to implicitly separate the style and content components of a single input image.
+            We first analyze the SDXL architecture and identify two specific transformer blocks (4th and 5th) that play a crucial role in encoding the content and style information, respectively.
+            Using LoRA, we optimize the weights of these two blocks, termed B-LoRAs, by reconstructing the input image based on a general text prompt like "A [v]".
           </p>
         </div>
         <div class="column is-centered has-text-centered">
-        <img src="static/figures/pipeline_final.png" alt="cars peace"/>
+        <img src="static/figures/apps_method1.png" alt="cars peace" style="width: 100%; display: block; margin: 0 auto;"/>
       </div>
         <div class="content has-text-justified">
           <p>
-            Given a target image I of the desired subject, our goal is to synthesize the corresponding sketch S while maintaining both the semantic and geometric attributes of the subject.
-            We begin by extracting the salient regions of the input image to define the initial locations of the strokes.
-            Next, in each step of the optimization we feed the stroke parameters to a differentiable rasterizer to produce the rasterized sketch. The resulting sketch, as well as the original image are then fed into CLIP to define a CLIP-based perceptual loss. 
-            The key to the success of our method is to use the intermediate layers of a pretrained CLIP model to constrain the geometry of the output sketch. Without this term, the output sketch would not be similar to the input image.
-            We back-propagate the loss through the differentiable rasterizer and update the strokes' control points directly at each step until convergence of the loss function.
-            The learned parameters and loss terms are highlighted in red, while the blue components are frozen during the entire optimization process, solid arrows are used to mark the backpropagation path.
+            After training, the content B-LoRA <span style="display: inline-block;">\( (\Delta W^4) \)</span> captures the semantic information and structure, while the style B-LoRA <span style="display: inline-block;">\( (\Delta W^5) \)</span> encodes the visual appearance and texture.
+            By combining these B-LoRAs in different ways, the method enables various image stylization tasks, such as image style transfer, text-based image stylization, and consistent style generation, without requiring any additional training or fine-tuning.
           </p>
         </div>
       </div>
@@ -278,12 +459,15 @@
         <div class="item">
         <p style="margin-top: 30px">
 
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/gifs/classes_art.mp4"
-        type="video/mp4">
-        </video>
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- <source src="static/gifs/classes_art.mp4" -->
+        <!-- type="video/mp4"> -->
+        <!-- </video> -->
         <h2 class="subtitle">
-          Our approach is different from conventional sketching methods in that it does not utilize a sketch dataset for training, rather it is optimized under the guidance of CLIP. Thus, our method is not limited to specific categories observed during training, as no category definition was introduced at any stage. This makes our method robust to various inputs.
+          Unlike existing methods that require explicit style-content disentanglement or additional optimization, B-LoRA implicitly separates the style and content components of a single input image, enabling various image stylization tasks.
+          <br>
+          Our approach offers several advantages, including efficiency and flexibility, as it allows for the direct reuse of learned styles and contents without the need for separate models or optimization for each combination.
+          Additionally, the method demonstrates robustness in handling challenging styles and contents, outperforming alternative approaches that often struggle with overfitting or style leakage issues.
         </h2>
         </p>
         </div>
@@ -299,25 +483,103 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- <p style="margin-top: 30px; margin-bottom: 30px"> -->
-      <h2 class="title has-text-centered">Editing the Brush Style on SVGs</h2>
-      <!-- </p> -->
       
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- <div class="column is-centered has-text-centered">
-        <img src="static/figures/styles/abstractions_controlpoints.png" width="1000" height="400" class="is-centered"/>
-        </div> -->
-        <div class="column is-centered has-text-centered">
-        <img src="static/figures/styles/flamingo_a2.png" width="400" height="400" class="is-centered"/>
-        </div>
-        <div class="column is-centered has-text-centered">
-        <img src="static/figures/styles/horse.png" width="400" height="400"/>
-        </div>
-        <div class="columns is-centered has-text-centered">
-        <img src="static/figures/styles/women7.png" width="400" height="400"/>
-        </div>
-      </div>
+      <!-- <p style="margin-top: 30px; margin-bottom: 30px"> -->
+      <h2 class="title has-text-centered">B-LoRA For Personalization</h2>
+      <!-- </p> -->
+      <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center;">
+      
+      <table border="1" style="width: 90%; margin: 0 auto;">
+        <!-- Rows -->
+        <tr>
+          <td><p class="table-heading">Content</p></td>
+          <td><p class="table-heading">Style</p></td>
+          <td><p class="table-heading">"playing with a ball"</p></td>
+          <td><p class="table-heading">"catching a frisbie"</p></td>
+          <td><p class="table-heading">"wearing a hat"</p></td>
+          <td><p class="table-heading">"with a crown"</p></td>
+          <td><p class="table-heading">"riding a bicycle"</p></td>
+          <td><p class="table-heading">"sleeping"</p></td>
+          <td><p class="table-heading">"in a boat"</p></td>
+          <td><p class="table-heading">"driving a car"</p></td>
+        </tr>
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_sleep.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_car.jpg" alt="Image 10"></td>
+        </tr>
+
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_sleep.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_car.jpg" alt="Image 10"></td>
+        </tr>
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/cat.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/style_images/cartoon_line.png" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_sleep.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_car.jpg" alt="Image 10"></td>
+        </tr>
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/child.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/style_images/watercolor.png" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_watercolor_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_watercolor_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_watercolor_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_watercolor_sleep.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/child_car.jpg" alt="Image 10"></td>
+        </tr>
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_sleep.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_car.jpg" alt="Image 10"></td>
+        </tr>
+        <tr>
+          <td class="table-img"><img src="static/figures/content_images/olly.jpg" alt="Image 1"></td>
+          <td class="table-img"><img src="static/figures/content_images/berli.jpg" alt="Image 2"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_berli_ball.jpg" alt="Image 3"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_berli_frisbie.jpg" alt="Image 4"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_hat.jpg" alt="Image 5"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_crown.jpg" alt="Image 6"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_bicycle.jpg" alt="Image 7"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_berli_sleeping.jpg" alt="Image 8"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_berli_boat.jpg" alt="Image 9"></td>
+          <td class="table-img"><img src="static/figures/personalization/olly_car.jpg" alt="Image 10"></td>
+        </tr>
+        
+      </table>
     </div>
+  </div>
   </div>
 
 </section>
@@ -333,14 +595,166 @@
     <div class="container">
       <!-- Paper poster -->
 
-      <h2 class="title has-text-centered">Sketching "in the wild": results of 100 random images of cats from SketchCOCO</h2>
+      <h2 class="title has-text-centered"> Image Stylization from Randomly Selected Content and Style Images with B-LoRA</h2>
       <p style="margin-top: 30px; margin-bottom: 30px">
-      <!-- <div class="column is-four-fifths"> -->
+        <div id="results-carousel" class="carousel results-carousel">
           <div class="column is-centered has-text-centered">
-        <img src="static/figures/cats2.png" alt="cars peace"/>
+            <table border="1" style="width: 90%; margin: 0 auto;">
+              <tr>
+                <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/style_images/watercolor.png" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/style_images/cartoon_line.png" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/style_images/ink_sketch.jpeg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/child.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/child_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/scary_mug_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/colorful_teapot.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/bull_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/statue_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/dog2_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_painting.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_watercolor.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_drawing1.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_working_cartoon.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_cartoon_line.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/metal_bird_ink_sketch.jpg" alt="Image 7"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="column is-centered has-text-centered">
+            <table border="1" style="width: 90%; margin: 0 auto;">
+              <tr>
+                <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/style_images/crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/style_images/kiss.png" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/backpack_dog.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/backpack_dog_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/fat_bird_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/pot.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/pot_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/buddha_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/teddybear_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <tr>
+                <td class="table-img"><img src="static/figures/content_images/sloth.jpg" alt="Image 1"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_drawing3.jpg" alt="Image 2"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_crayon_drawing.jpg" alt="Image 3"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_pen_sketch.jpg" alt="Image 4"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_kiss.jpg" alt="Image 5"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_drawing2.jpg" alt="Image 6"></td>
+                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_painting.jpg" alt="Image 7"></td>
+              </tr>
+              <!-- Add more rows and images as needed -->
+            </table>
+          </div>
+          
+      </div>
       </div>
        </p>
-        <!--/ Paper poster -->
       </div>
     </div>
 
@@ -354,13 +768,13 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{vinker2022clipasso,
-      title={CLIPasso: Semantically-Aware Object Sketching}, 
-      author={Yael Vinker and Ehsan Pajouheshgar and Jessica Y. Bo and Roman Christian Bachmann and Amit Haim Bermano and Daniel Cohen-Or and Amir Zamir and Ariel Shamir},
-      year={2022},
-      eprint={2202.05822},
-      archivePrefix={arXiv},
-      primaryClass={cs.GR}
+      <pre><code>@misc{,
+      title={Implicit Style-Content Separation using B-LoRA}, 
+      author={Yarden Frenkel and Yael Vinker and Daniel Cohen-Or and Ariel Shamir},
+      year={},
+      eprint={},
+      archivePrefix={},
+      primaryClass={}
       }</code></pre>
     </div>
 </section>
