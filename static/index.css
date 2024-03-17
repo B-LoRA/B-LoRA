@@ -1,0 +1,227 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+/*.publication-title {
+}*/
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+}
+
+.publication-author-block .hero-body {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+
+.publication-title {
+    /*font-size: 10px;*/
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.results-carousel .item {
+  width: 50px;
+  height: 50px;/*
+  margin: 50px;
+  overflow: hidden;
+  padding: 50px*/;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*margin: -25px 0 0 -25px;*/
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+/*
+.container {
+  padding-top: 0px;
+  padding-bottom: 3rem;
+
+}
+
+*/
+table {
+  border-collapse: collapse;
+  width: 80%; /* Set the width of the table to 80% */
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: none; /* Remove border from table, th, and td elements */
+}
+
+/* Optional: Add some padding to table cells */
+td {
+  padding: 8px;
+}
+
+/* Styles for images within elements with the class 'table-img' */
+.table-img img {
+  max-height: 100%;
+  max-width: 100%; /* Set a maximum height for the images */
+  display: block;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  border-radius: 10px; /* Add rounded corners to the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+.corner-img img {
+  max-height: 100%;
+  max-width: 100%; /* Set a maximum height for the images */
+  display: block;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+}
+
+/* Scale up the images on hover */
+.table-img img:hover {
+  transform: scale(1.1);
+}
+
+.table-img td {
+  height: 200px; /* Adjust the height as needed */
+}
+
+.border-table td:first-child {
+  border-right: 2px solid #ccc; /* Adjust border style as needed */
+}
+
+.person img {
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the entire container while preserving aspect ratio */
+}
+
+
+.table-heading {
+  font-family: 'Times New Roman', Times, serif; /* Use Times font */
+  font-size: 24px; /* Set font size */
+  font-weight: bold; /* Optionally adjust font weight */
+  font-style: italic;
+  color: #333; /* Set text color */
+  text-align: center;
+  vertical-align: middle;
+  width: 150px;
+  /* Optionally add more styling properties like margin, padding, etc. */
+}
