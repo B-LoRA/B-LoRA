@@ -174,22 +174,24 @@ td {
 
 /* Styles for images within elements with the class 'table-img' */
 .table-img img {
-  max-height: 200px; /* Set a maximum height for the images */
+  max-height: 100%;
+  max-width: 100%; /* Set a maximum height for the images */
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 10px; /* Add rounded corners to the images */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
 }
 
 .corner-img img {
-  max-height: 200px; /* Set a maximum height for the images */
+  max-height: 100%;
+  max-width: 100%; /* Set a maximum height for the images */
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 /* Scale up the images on hover */
@@ -220,6 +222,62 @@ td {
   color: #333; /* Set text color */
   text-align: center;
   vertical-align: middle;
-  width: 150px;
+  /* width: 150px; */
   /* Optionally add more styling properties like margin, padding, etc. */
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates 10 columns */
+  gap: 10px; /* Spacing between grid items */
+  width: 100%;
+  margin: 0 auto; /* Center the grid */
+}
+.grid-container-personalization {
+  grid-template-columns: repeat(10, 1fr); /* Creates 10 columns */
+}
+
+.grid-container-random {
+  grid-template-columns: repeat(7, 1fr); /* Creates 10 columns */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* Ensures content fits within each cell */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images cover the cell */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optionally, style the first row differently to mimic a header */
+.grid-container > div:nth-child(-n+10) {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(10, 1fr); /* Adjusts to 5 columns on smaller screens */
+  }
+  .grid-container > div p {
+      font-size: 12px; /* Adjusts font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: repeat(10, 1fr); /* Adjusts to 2 columns on very small screens */
+  }
+  .grid-container > div p {
+      font-size: 12px; /* Adjusts font size for smaller screens */
+  }
 }
