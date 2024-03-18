@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   <meta property="og:title" content="Implicit Style-Content Separation using B-LoRA"/>
-  <meta property="og:url" content="https://clipasso.github.io/clipasso/"/>
+  <meta property="og:url" content="https://yardenfren1996.github.io/B-LoRA/"/>
   <meta property="og:image" content="static/images/og_tag_header_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -54,9 +54,9 @@
           <!-- <h1 class="title is-1 publication-title">CLIPasso: Semantically-Aware Object Sketching</h1> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block"><a href="" target="_blank">Yarden Frenkel</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="https://yaelvi116.wixsite.com/mysite" target="_blank">Yael Vinker</a><sup>1</sup>,</span>
-            <span class="author-block"><a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://yael-vinker.github.io/website/" target="_blank">Yael Vinker</a><sup>1</sup>,</span>
             <span class="author-block"><a href="https://faculty.idc.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a><sup>2</sup></span>
+            <span class="author-block"><a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a><sup>1</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -78,7 +78,7 @@
               
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="static/source/paper_CLIPasso_Semantically_Aware_Object_Sketching.pdf" target="_blank"
+                <a href="static/source/paper_CLIPasso_Semantically_Aware_Object_Sketching.pdf" target="_blank" 
                   class="external-link button is-normal is-rounded">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -186,236 +186,203 @@
       <div id="results-carousel" class="carousel results-carousel">
       <div class="column is-centered has-text-centered">
         <h2 class="title has-text-centered">Image Stylization Based On Image Style Reference</h2>
-        <table border="1">
-          <tr>
-            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_images/kiss.png" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/scene_imgs/ballerina.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/scene_style/ballerina_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/scene_style/ballerina_drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/scene_style/ballerina_working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/scene_style/ballerina_kiss.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/scene_style/ballerina_drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/scene_imgs/boat.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/scene_style/boat_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/scene_style/boat_drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/scene_style/boat_working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/scene_style/boat_kiss.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/scene_style/boat_drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/scene_imgs/eiffel_tower.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_kiss.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/scene_style/eiffel_tower_drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/scene_imgs/plant.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/scene_style/plant_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/scene_style/plant_drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/scene_style/plant_working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/scene_style/plant_kiss.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/scene_style/plant_drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/scene_imgs/queen.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/scene_style/queen_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/scene_style/queen_drawing1.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/scene_style/queen_working_cartoon.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/scene_style/queen_kiss.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/scene_style/queen_drawing2.jpg" alt="Image 6"></td>
-          </tr>
-          <!-- Add more rows and images as needed -->
-        </table>
+        <div class="grid-container">
+          <div class="grid-item"><img src="static/figures/corner_s.png" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/style_images/drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/style_images/kiss.png" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/scene_imgs/ballerina.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/ballerina_pen_sketch.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/ballerina_drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/ballerina_working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/ballerina_kiss.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/ballerina_drawing2.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/scene_imgs/boat.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/boat_pen_sketch.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/boat_drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/boat_working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/boat_kiss.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/boat_drawing2.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/scene_imgs/eiffel_tower.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/eiffel_tower_pen_sketch.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/eiffel_tower_drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/eiffel_tower_working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/eiffel_tower_kiss.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/eiffel_tower_drawing2.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/scene_imgs/plant.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/plant_pen_sketch.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/plant_drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/plant_working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/plant_kiss.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/plant_drawing2.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/scene_imgs/queen.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/queen_pen_sketch.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/queen_drawing1.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/queen_working_cartoon.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/queen_kiss.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/scene_style/queen_drawing2.jpg" alt="Image 6"></div>
+        </div>
       </div>
       <div class="column is-centered has-text-centered">
         <h2 class="title has-text-centered">Image Stylization Based On Object Image Reference</h2>
-        <table border="1">
-          <tr>
-            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/bull_bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/bull_wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/bull_dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/bull_fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/bull_statue.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/wolf_plushie_statue.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/dog2_bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/dog2_wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/dog2_dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/dog2_fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/dog2_statue.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/fat_bird_statue.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/statue_bull.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/statue_wolf_plushie.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/statue_dog2.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/statue_fat_bird.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/objects_mixing/statue_statue.jpg" alt="Image 6"></td>
-          </tr>
-          <!-- Add more rows and images as needed -->
-        </table>
+        <div class="grid-container">
+            <div class="grid-item"><img src="static/figures/corner_s.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/content_images/bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/content_images/dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/content_images/statue.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/bull_bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/bull_wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/bull_dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/bull_fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/bull_statue.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/wolf_plushie_bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/wolf_plushie_wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/wolf_plushie_dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/wolf_plushie_fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/wolf_plushie_statue.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/dog2_bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/dog2_wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/dog2_dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/dog2_fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/dog2_statue.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/fat_bird_bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/fat_bird_wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/fat_bird_dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/fat_bird_fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/fat_bird_statue.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/statue_bull.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/statue_wolf_plushie.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/statue_dog2.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/statue_fat_bird.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/objects_mixing/statue_statue.jpg" alt="Image 6"></div>
+      </div>
       </div>
       <div class="column is-centered has-text-centered">
         <h2 class="title has-text-centered">Image Stylization Based On Style Image Reference</h2>
-        <table border="1">
-          <tr>
-            <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_drawing3.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/pen_sketch_working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing3_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing3_drawing3.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing3_painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing3_drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing3_working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/painting_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/painting_drawing3.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/painting_painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/painting_drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/painting_working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing1_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing1_drawing3.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing1_painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing1_drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/drawing1_working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_pen_sketch.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_drawing3.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_painting.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_drawing1.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/style_mixing/working_cartoon_working_cartoon.jpg" alt="Image 6"></td>
-          </tr>
+        <div class="grid-container">
+
+            <div class="grid-item"><img src="static/figures/corner_s.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_images/drawing3.png" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_images/painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_images/drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/pen_sketch_pen_sketch.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/pen_sketch_drawing3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/pen_sketch_painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/pen_sketch_drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/pen_sketch_working_cartoon.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/style_images/drawing3.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing3_pen_sketch.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing3_drawing3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing3_painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing3_drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing3_working_cartoon.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/style_images/painting.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/painting_pen_sketch.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/painting_drawing3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/painting_painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/painting_drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/painting_working_cartoon.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/style_images/drawing1.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing1_pen_sketch.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing1_drawing3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing1_painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing1_drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/drawing1_working_cartoon.jpg" alt="Image 6"></div>
+
+            <div class="grid-item"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/working_cartoon_pen_sketch.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/working_cartoon_drawing3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/working_cartoon_painting.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/working_cartoon_drawing1.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="static/figures/style_mixing/working_cartoon_working_cartoon.jpg" alt="Image 6"></div>
         </table>
       </div>
-      <div class="column is-centered has-text-centered">
+      </div>
+       <div class="column is-centered has-text-centered"> 
         <h2 class="title has-text-centered">Image Stylization Based On Text Reference</h2>
-        <table border="1" class="border-table">
-          <!-- Rows -->
-          <tr>
-            <td><p class="table-heading">Content</p></td>
-            <td><p class="table-heading">"Made of Gold"</p></td>
-            <td><p class="table-heading">"... Wood"</p></td>
-            <td><p class="table-heading">"... Glass"</p></td>
-            <td><p class="table-heading">"... Wool"</p></td>
-            <td><p class="table-heading">"... Steel"</p></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/teddybear_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/teddybear_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/teddybear_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/teddybear_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/teddybear_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/metal_bird_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/metal_bird_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/metal_bird_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/metal_bird_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/metal_bird_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/bull_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/bull_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/bull_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/bull_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/bull_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/fat_bird_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/fat_bird_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/fat_bird_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/fat_bird_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/fat_bird_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/buddha_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/buddha_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/buddha_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/buddha_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/buddha_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <tr>
-            <td class="table-img"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></td>
-            <td class="table-img"><img src="static/figures/material_change/scary_mug_gold.jpg" alt="Image 2"></td>
-            <td class="table-img"><img src="static/figures/material_change/scary_mug_wood.jpg" alt="Image 3"></td>
-            <td class="table-img"><img src="static/figures/material_change/scary_mug_glass.jpg" alt="Image 4"></td>
-            <td class="table-img"><img src="static/figures/material_change/scary_mug_wool.jpg" alt="Image 5"></td>
-            <td class="table-img"><img src="static/figures/material_change/scary_mug_steel.jpg" alt="Image 6"></td>
-          </tr>
-          <!-- Add more rows and images as needed -->
-        </table>
+        <div class="grid-container grid-container-material">
+          <div class="grid-item"><p class="table-heading">Content</p></div>
+          <div class="grid-item"><p class="table-heading">"Made of Gold"</p></div>
+          <div class="grid-item"><p class="table-heading">"... Wood"</p></div>
+          <div class="grid-item"><p class="table-heading">"... Glass"</p></div>
+          <div class="grid-item"><p class="table-heading">"... Wool"</p></div>
+          <div class="grid-item"><p class="table-heading">"... Steel"</p></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/teddybear_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/teddybear_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/teddybear_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/teddybear_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/teddybear_steel.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/metal_bird_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/metal_bird_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/metal_bird_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/metal_bird_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/metal_bird_steel.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/bull_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/bull_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/bull_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/bull_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/bull_steel.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/fat_bird_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/fat_bird_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/fat_bird_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/fat_bird_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/fat_bird_steel.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/buddha_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/buddha_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/buddha_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/buddha_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/buddha_steel.jpg" alt="Image 6"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/material_change/scary_mug_gold.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/material_change/scary_mug_wood.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/material_change/scary_mug_glass.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/material_change/scary_mug_wool.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/material_change/scary_mug_steel.jpg" alt="Image 6"></div>
+
+
+        </div>
       </div>
   </div>
 </div>
 </div>
 </section>
-
-
-
-
 
 
 
@@ -448,7 +415,6 @@
 </section> 
 
 
-
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -479,277 +445,240 @@
 
 
 
-
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       
-      <!-- <p style="margin-top: 30px; margin-bottom: 30px"> -->
-      <h2 class="title has-text-centered">B-LoRA For Personalization</h2>
-      <!-- </p> -->
+    <p style="margin-top: 30px; margin-bottom: 30px"> 
+       <h2 class="title has-text-centered">B-LoRA For Personalization</h2>
+       </p> 
       <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center;">
-      
-      <table border="1" style="width: 90%; margin: 0 auto;">
-        <!-- Rows -->
-        <tr>
-          <td><p class="table-heading">Content</p></td>
-          <td><p class="table-heading">Style</p></td>
-          <td><p class="table-heading">"playing with a ball"</p></td>
-          <td><p class="table-heading">"catching a frisbie"</p></td>
-          <td><p class="table-heading">"wearing a hat"</p></td>
-          <td><p class="table-heading">"with a crown"</p></td>
-          <td><p class="table-heading">"riding a bicycle"</p></td>
-          <td><p class="table-heading">"sleeping"</p></td>
-          <td><p class="table-heading">"in a boat"</p></td>
-          <td><p class="table-heading">"driving a car"</p></td>
-        </tr>
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_sleep.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_working_cartoon_car.jpg" alt="Image 10"></td>
-        </tr>
+        <div class="grid-container grid-container-personalization">
+          <!-- Header Row -->
+          <div class="grid-item"><p>Content</p></div>
+          <div class="grid-item"><p>Style</p></div>
+          <div class="grid-item"><p>"playing with a ball"</p></div>
+          <div class="grid-item"><p>"catching a frisbie"</p></div>
+          <div class="grid-item"><p>"wearing a hat"</p></div>
+          <div class="grid-item"><p>"with a crown"</p></div>
+          <div class="grid-item"><p>"riding a bicycle"</p></div>
+          <div class="grid-item"><p>"sleeping"</p></div>
+          <div class="grid-item"><p>"in a boat"</p></div>
+          <div class="grid-item"><p>"driving a car"</p></div>
 
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_sleep.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/dog2_wolf_plushie_car.jpg" alt="Image 10"></td>
-        </tr>
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/cat.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/style_images/cartoon_line.png" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_sleep.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/cat_cartoon_line_car.jpg" alt="Image 10"></td>
-        </tr>
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/child.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/style_images/watercolor.png" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_watercolor_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_watercolor_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_watercolor_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_watercolor_sleep.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/child_car.jpg" alt="Image 10"></td>
-        </tr>
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_sleep.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/bull_drawing3_car.jpg" alt="Image 10"></td>
-        </tr>
-        <tr>
-          <td class="table-img"><img src="static/figures/content_images/olly.jpg" alt="Image 1"></td>
-          <td class="table-img"><img src="static/figures/content_images/berli.jpg" alt="Image 2"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_berli_ball.jpg" alt="Image 3"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_berli_frisbie.jpg" alt="Image 4"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_hat.jpg" alt="Image 5"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_crown.jpg" alt="Image 6"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_bicycle.jpg" alt="Image 7"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_berli_sleeping.jpg" alt="Image 8"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_berli_boat.jpg" alt="Image 9"></td>
-          <td class="table-img"><img src="static/figures/personalization/olly_car.jpg" alt="Image 10"></td>
-        </tr>
-        
-      </table>
+          <!-- Repeat Below for Each Row of Images -->
+          <div class="grid-item"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_sleep.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_working_cartoon_car.jpg" alt="Image 10"></div>
+          <!-- Insert images for each scenario -->
+          <div class="grid-item"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_sleep.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/dog2_wolf_plushie_car.jpg" alt="Image 10"></div>
+          
+          <div class="grid-item"><img src="static/figures/content_images/cat.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/style_images/cartoon_line.png" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_cartoon_line_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_cartoon_line_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_cartoon_line_sleep.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_cartoon_line_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/cat_cartoon_line_car.jpg" alt="Image 10"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/child.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/style_images/watercolor.png" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_watercolor_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_watercolor_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_watercolor_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_watercolor_sleep.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/child_car.jpg" alt="Image 10"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_sleep.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/bull_drawing3_car.jpg" alt="Image 10"></div>
+
+          <div class="grid-item"><img src="static/figures/content_images/olly.jpg" alt="Image 1"></div>
+          <div class="grid-item"><img src="static/figures/content_images/berli.jpg" alt="Image 2"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_berli_ball.jpg" alt="Image 3"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_berli_frisbie.jpg" alt="Image 4"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_hat.jpg" alt="Image 5"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_crown.jpg" alt="Image 6"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_bicycle.jpg" alt="Image 7"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_berli_sleeping.jpg" alt="Image 8"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_berli_boat.jpg" alt="Image 9"></div>
+          <div class="grid-item"><img src="static/figures/personalization/olly_car.jpg" alt="Image 10"></div>
+      </div>
     </div>
   </div>
   </div>
-
 </section>
-
-
-
-
-
 
 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper poster -->
-
       <h2 class="title has-text-centered"> Image Stylization from Randomly Selected Content and Style Images with B-LoRA</h2>
       <p style="margin-top: 30px; margin-bottom: 30px">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="column is-centered has-text-centered">
-            <table border="1" style="width: 90%; margin: 0 auto;">
-              <tr>
-                <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/style_images/watercolor.png" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/style_images/drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/style_images/cartoon_line.png" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/style_images/ink_sketch.jpeg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/child.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/child_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/scary_mug_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/colorful_teapot.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/colorful_teapot_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/bull_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/statue_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/dog2_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_painting.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_watercolor.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_drawing1.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_working_cartoon.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_cartoon_line.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/metal_bird_ink_sketch.jpg" alt="Image 7"></td>
-              </tr>
-            </table>
+            <div class="grid-container grid-container-random">
+                <div class="grid-item"><img src="static/figures/corner_s.png" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/style_images/painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/style_images/watercolor.png" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/style_images/drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/style_images/working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/style_images/cartoon_line.png" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/style_images/ink_sketch.jpeg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/child.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/child_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/scary_mug.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/scary_mug_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/colorful_teapot.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/colorful_teapot_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/bull.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/bull_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/statue.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/statue_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/dog2.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/dog2_ink_sketch.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/metal_bird.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_painting.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_watercolor.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_drawing1.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_working_cartoon.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_cartoon_line.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/metal_bird_ink_sketch.jpg" alt="Image 7"></div>
+          </div>
           </div>
           <div class="column is-centered has-text-centered">
-            <table border="1" style="width: 90%; margin: 0 auto;">
-              <tr>
-                <td class="corner-img"><img src="static/figures/corner_s.png" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/style_images/crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/style_images/kiss.png" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/style_images/painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/backpack_dog.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/backpack_dog_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/wolf_plushie_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/fat_bird_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/pot.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/pot_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/buddha_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/teddybear_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <tr>
-                <td class="table-img"><img src="static/figures/content_images/sloth.jpg" alt="Image 1"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_drawing3.jpg" alt="Image 2"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_crayon_drawing.jpg" alt="Image 3"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_pen_sketch.jpg" alt="Image 4"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_kiss.jpg" alt="Image 5"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_drawing2.jpg" alt="Image 6"></td>
-                <td class="table-img"><img src="static/figures/random_results/grey_sloth_plushie_painting.jpg" alt="Image 7"></td>
-              </tr>
-              <!-- Add more rows and images as needed -->
-            </table>
+            <div class="grid-container grid-container-random">
+
+                <div class="grid-item"><img src="static/figures/corner_s.png" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/style_images/drawing3.png" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/style_images/crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/style_images/pen_sketch.jpeg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/style_images/kiss.png" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/style_images/drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/style_images/painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/backpack_dog.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/backpack_dog_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/wolf_plushie.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/wolf_plushie_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/fat_bird.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/fat_bird_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/pot.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/pot_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/buddha.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/buddha_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/teddybear.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/teddybear_painting.jpg" alt="Image 7"></div>
+
+                <div class="grid-item"><img src="static/figures/content_images/sloth.jpg" alt="Image 1"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_drawing3.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_crayon_drawing.jpg" alt="Image 3"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_pen_sketch.jpg" alt="Image 4"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_kiss.jpg" alt="Image 5"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_drawing2.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="static/figures/random_results/grey_sloth_plushie_painting.jpg" alt="Image 7"></div>
+          </div>
           </div>
           
       </div>
@@ -759,10 +688,6 @@
     </div>
 
   </section>
-
-
-
-
 
 
   <section class="section" id="BibTeX">
