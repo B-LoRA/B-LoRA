@@ -231,7 +231,7 @@ td {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* Creates 10 columns */
   gap: 10px; /* Spacing between grid items */
-  width: 100%;
+  width: 90%;
   margin: 0 auto; /* Center the grid */
 }
 .grid-container-personalization {
