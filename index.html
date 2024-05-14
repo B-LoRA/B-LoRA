@@ -404,6 +404,9 @@
           <p>
             Our method leverages the powerful Stable Diffusion XL (SDXL) text-to-image diffusion model and the Low-Rank Adaptation (LoRA) technique to implicitly separate the style and content components of a single input image.
             We first analyze the SDXL architecture and identify two specific transformer blocks (4th and 5th) that play a crucial role in encoding the content and style information, respectively.
+          </p>
+          <img src="static/figures/B-LoRAexp.gif" alt="Method Motivation" style="width: 100%; display: block; margin: 0 auto; margin-bottom: 10px;">
+          <p>
             Using LoRA, we optimize the weights of these two blocks, termed B-LoRAs, by reconstructing the input image based on a general text prompt like "A [v]".
           </p>
         </div>
